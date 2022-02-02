@@ -18,9 +18,9 @@ public class TestApi {
                 .relaxedHTTPSValidation()
                 .accept(ContentType.JSON)
                 .when()
-                .get("https://staging.tiered-planet.net/mild-temper/fruits")
+                .get("https://staging.tiered-planet.net/mild-temper/legumes")
                 .then()
                 .assertThat()
-                .body("[2].name", equalTo("Zucchini"));
+                .body("[1].name", equalTo("Zucchini"));
     }
 }
