@@ -21,6 +21,6 @@ public class TestApi {
                 .get("https://staging.tiered-planet.net/mild-temper/fruits")
                 .then()
                 .assertThat()
-                .body("[0].name", equalTo("Zucchini"));
+                .body("[2].name", equalTo("Zucchini"));
     }
 }
